@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kaushan+Script&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kaushan+Script&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #0a0118;
+    --font01: "Outfit", sans-serif; 
+    --font02: "Roboto", sans-serif;
+    --text-btn: #b47cfd;
+    --text-p: #9b96b0;
+    --btn: #5f2bd5; 
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    border-bottom: 1px solid #9b96b02b;
+}
+
+.rosa {
+    color: var(--text-btn);
+}
+
+.logo img {
+    width: 48px;
+    height: auto;
+    margin-right: 550px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.naav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    font-family: var(--font01);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--text-btn);
+}
+
+.bem-vindo {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 15px 40px;
+    text-align: center;
+    color: white;
+}
+
+.container .bv {
+    display: inline;
+    padding: 2px 7px;
+    font-family: var(--font01);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    border: 2px solid var(--text-btn);
+    border-radius: 30px;
+}
+.container h1 {
+    margin-top: 15px;
+    padding: 5px 7px;
+    font-weight: 600;
+    font-family: var(--font01);
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--text-btn);
+}
+
+.container p {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-family: var(--font02);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-p);
+}
+
+.ng {
+    color: rgba(255, 255, 255, 0.750);
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 12px 24px;
+    background-image: linear-gradient(to right, var(--text-btn), var(--btn));
+    color: white;
+    font-family: var(--font01);
+    font-size: 16px;
+    line-height: 13px;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-whatsapp:hover {
+    background: var(--text-btn);
+}
+
+.solucoes {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 10px;
+    border: 1px solid #9b96b02b;
+    padding: 40px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.solucoes h2 {
+    font-family: var(--font01);
+    font-size: 39px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 60px;
+    line-height: 39px;
+    letter-spacing: 0px;
+}
+
+.solucoes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.solucoes-grid span {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--font01);
+    color: rgba(255, 255, 255, 0.300);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.solucoes-grid span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #121212;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
