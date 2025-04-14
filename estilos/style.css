@@ -49,7 +49,7 @@ header {
     gap: 20px;
 }
 
-.naav-links li {
+.nav-links li {
     display: inline;
 }
 
@@ -167,7 +167,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
 }
 
 #about2 {
